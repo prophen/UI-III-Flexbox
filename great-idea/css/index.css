@@ -164,7 +164,8 @@ h2 {
 }
 
 nav {
-  display: block;
+  display: flex;
+  justify-content: flex-start;
   width: 880px;
   height: 100px;
   margin: 0 auto;
@@ -176,7 +177,6 @@ nav a {
   color: black;
   margin: 35px 31px 0 31px;
   font-size: 14px;
-  display: inline-block;
 }
 
 nav a:hover {
@@ -188,7 +188,6 @@ nav a:first-child {
 }
 
 nav div {
-  display: inline-block;
   position: absolute;
   right: 0;
 }
@@ -207,10 +206,11 @@ header {
   border-bottom: 1px solid black;
   position: relative;
   height: 490px;
+  display: flex;
+  align-items: center baseline;
 }
 
 header div {
-  display: inline-block;
   text-align: center;
   margin: 70px 0 0 85px;
 }
@@ -232,19 +232,19 @@ header div a {
 }
 
 header img {
-  display: inline-block;
   position: absolute;
   right: 0;
 }
 
 .section-one {
   margin-top: 39px;
+  display: flex;
+  justify-content: space-between;
 }
 
 .section-one div {
   width: 430px;
   height: 100px;
-  display: inline-block;
 }
 
 .section-one div p {
@@ -263,10 +263,11 @@ header img {
   border-bottom: 1px solid black;
   margin-top: 36px;
   padding-bottom: 47px;
+  display: flex;
+  justify-content: space-between;
 }
 
 .section-two div {
-  display: inline-block;
   width: 280px;
   margin-right: 10px;
 }
@@ -274,9 +275,16 @@ header img {
 .section-two div p {
   line-height: 1.16;
 }
-
+.address-container {
+	height: 100px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
 address {
   margin-top: 38px;
+
+
 }
 
 address div {
@@ -284,7 +292,6 @@ address div {
 }
 
 address div span {
-  display: inline-block;
   margin: 17px 0 18px 0;
 }
 
